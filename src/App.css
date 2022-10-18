@@ -1,0 +1,217 @@
+@font-face{
+  font-family: 'Demon';
+  src: url('./assets/bloodcrow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal.
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #000C1D;
+  font-family: 'Inter', sans-serif;
+  color: white
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 30px 0px 30px;
+  font-family: 'Demon', sans-serif;
+  font-size: 50px;
+}
+
+.logo{
+  width: 17%;
+}
+
+.addRespira{
+  background-color: white;
+  width: 15%;
+  color: #000C1D;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-radius: 30px;
+  height: 50px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 0;
+  cursor: pointer;
+  border: white 2px solid;
+}
+
+.addRespira:hover{
+  background-color: #000C1D;
+  border: white 2px solid;
+  color: white;
+  transition: 0.7s;
+}
+
+.box-infos-add{
+  border: gray 2px solid;
+  margin-left: 30px;
+  width: 50%;
+  padding: 50px 30px 30px 30px;
+  display: none;
+  margin-bottom: 40px
+}
+
+.muzan{
+  width: 20%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 40px;
+}
+
+
+
+.input{
+  background-color: #000C1D;
+  outline: 0;
+  border: none;
+  border-bottom: white 1px solid;
+  padding-bottom: 5px;
+  width: 90%;
+  color: white;
+  margin-bottom: 20px
+}
+
+.button{
+  background-color: white;
+  width: 15%;
+  color: #000C1D;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-radius: 30px;
+  height: 30px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: white 2px solid;
+}
+
+.linha{
+  display: flex;
+  align-items: center;
+}
+
+.linhas{
+  display: flex;
+}
+
+#error{
+  margin-left: 30px;
+  color: red;
+  display: none;
+}
+
+#sucesso{
+  margin-left: 30px;
+  color: green;
+  display: none;
+}
+
+.ulRpg{
+  list-style: none;
+  text-align: left;
+}
+
+.box-hability{
+  width: 70%;
+  padding: 10px;
+}
+
+.description{
+  color: gray;
+}
+
+.subtitle{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1277px)
+{
+  .addRespira{
+    width: 30%
+  }
+  .button{
+    width: 30%
+  }
+}
+
+@media (max-width: 650px)
+{
+  .logo{
+    display: none
+  }
+
+  .addRespira{
+    width: 50%;
+
+  }
+
+  .description{
+    text-align: justify;
+    margin-right: 80px
+  }
+
+  .button{
+    width: 50%
+  }
+
+  .linhas{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linha{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 35px
+  }
+
+  .box-infos-add{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box-hability{
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .main{
+    margin-bottom: 250px
+  }
+
+  #error{
+    margin-left: 0;
+  }
+  
+  #sucesso{
+    margin-left: 0;
+  }
+
+  .muzan{
+    width: 30%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 40px;
+  }
+
+  
+}
